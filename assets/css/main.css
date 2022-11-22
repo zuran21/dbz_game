@@ -1,0 +1,68 @@
+.fondo-blur{
+    
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    
+  }
+#bgf{
+    background-image: url(/assets/img/SPLASH1.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+}
+  
+
+.container{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;;
+}
+
+.ring{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation:  ring 2s linear infinite;
+}
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #dd1b1b;
+    }
+}
+.ring::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.ring_text{
+    color: #737373;
+    font-size: 20px;
+    padding-top: 110px;
+    text-transform:  uppercase;
+    letter-spacing: 1.5px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text{
+    50%{
+        color: rgb(190, 53, 53);
+    }
+}

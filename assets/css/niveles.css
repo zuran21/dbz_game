@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    font-family: 'Anton', sans-serif;
+}
+
+#bg-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-image: url("/assets/img/tm-astro-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #1e2b2b;
+    border: 0;
+    font-size: 20px ;
+    letter-spacing: 4px;
+    opacity: 0.5;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+  }
+  .navbar-nav li.active a {
+    color: rgb(0, 0, 0) !important;
+    background-color: #29292c !important;
+  }
+  .dropdown-menu li a {
+    background-color: #1e2b2b;
+}
+.dropdown-menu li a:hover {
+    background-color: rgb(55, 91, 112);
+  }
+
+
+.col{
+    transition: all 500ms ease;
+}
+
+.col:hover{
+    transform: scale(1.07);
+
+}
+
+
+
+.btn-group{
+  padding-top: 25px;
+    float: right;
+}
+.from-range{
+  padding-top: 5px;
+  margin-top: 5px;
+}
